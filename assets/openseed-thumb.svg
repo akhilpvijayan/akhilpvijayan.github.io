@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b8f5d0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#b8d4f5;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00c853"/>
+      <stop offset="100%" style="stop-color:#00e676"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="rgba(0,0,0,0.35)"/>
+    </filter>
+    <clipPath id="cardClip">
+      <rect x="60" y="30" width="680" height="440" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <!-- Outer gradient background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- App window card with shadow -->
+  <rect x="60" y="30" width="680" height="440" rx="16" fill="#0d0d0d" filter="url(#shadow)"/>
+
+  <!-- ── Top bar ── -->
+  <rect x="60" y="30" width="680" height="52" rx="16" fill="#141414"/>
+  <rect x="60" y="62" width="680" height="20" fill="#141414"/>
+
+  <!-- Language pill -->
+  <rect x="80" y="44" width="72" height="24" rx="12" fill="#1e1e1e" stroke="#333" stroke-width="1"/>
+  <text x="116" y="61" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#ccc" text-anchor="middle">🇺🇸 English</text>
+
+  <!-- OpenSeed logo -->
+  <text x="400" y="63" font-family="Georgia, serif" font-size="22" font-weight="700" fill="white" text-anchor="middle">Open<tspan fill="#00e676">Seed</tspan></text>
+
+  <!-- Toggle -->
+  <rect x="700" y="44" width="42" height="24" rx="12" fill="#1e1e1e" stroke="#333" stroke-width="1"/>
+  <circle cx="730" cy="56" r="9" fill="#333"/>
+  <text x="714" y="61" font-family="Arial" font-size="12" fill="#aaa">🌙</text>
+
+  <!-- ── Left sidebar ── -->
+  <rect x="60" y="82" width="270" height="388" fill="#111"/>
+
+  <!-- Filter header -->
+  <text x="82" y="108" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#888">▼  Filter</text>
+  <line x1="80" y1="115" x2="318" y2="115" stroke="#222" stroke-width="1"/>
+
+  <!-- Form fields macro -->
+  <!-- Language -->
+  <text x="82" y="136" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#777">Language</text>
+  <rect x="82" y="142" width="110" height="22" rx="4" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="92" y="157" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#999">All</text>
+  <text x="178" y="157" font-family="Arial" font-size="10" fill="#555">▾</text>
+
+  <!-- Owner -->
+  <text x="206" y="136" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#777">Owner</text>
+  <rect x="206" y="142" width="110" height="22" rx="4" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="216" y="157" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#444">Owner Name</text>
+
+  <!-- Label -->
+  <text x="82" y="180" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#777">Label</text>
+  <rect x="82" y="186" width="110" height="22" rx="4" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="92" y="201" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#444">Eg: bug, enhancement</text>
+
+  <!-- Category -->
+  <text x="206" y="180" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#777">Category</text>
+  <rect x="206" y="186" width="110" height="22" rx="4" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="216" y="201" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#999">All</text>
+  <text x="302" y="201" font-family="Arial" font-size="10" fill="#555">▾</text>
+
+  <!-- Repository -->
+  <text x="82" y="224" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#777">Repository</text>
+  <rect x="82" y="230" width="110" height="22" rx="4" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="92" y="245" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#444">Enter Repository name</text>
+
+  <!-- Title -->
+  <text x="206" y="224" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#777">Title</text>
+  <rect x="206" y="230" width="110" height="22" rx="4" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="216" y="245" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#444">Issue Title</text>
+
+  <!-- Min Stars -->
+  <text x="82" y="268" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#777">Min Stars</text>
+  <rect x="82" y="274" width="110" height="22" rx="4" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="92" y="289" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#555">0</text>
+
+  <!-- Max Stars -->
+  <text x="206" y="268" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#777">Max Stars</text>
+  <rect x="206" y="274" width="110" height="22" rx="4" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="216" y="289" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#555">10000</text>
+
+  <!-- Created After -->
+  <text x="82" y="312" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#777">Created After</text>
+  <rect x="82" y="318" width="110" height="22" rx="4" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="92" y="333" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#444">dd-mm-yyyy</text>
+  <text x="182" y="333" font-family="Arial" font-size="10" fill="#555">📅</text>
+
+  <!-- License -->
+  <text x="206" y="312" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#777">License</text>
+  <rect x="206" y="318" width="110" height="22" rx="4" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="216" y="333" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#999">All</text>
+  <text x="302" y="333" font-family="Arial" font-size="10" fill="#555">▾</text>
+
+  <!-- Min Forks -->
+  <text x="82" y="356" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#777">Min Forks</text>
+  <rect x="82" y="362" width="110" height="22" rx="4" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="92" y="377" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#555">0</text>
+
+  <!-- Max Forks -->
+  <text x="206" y="356" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#777">Max Forks</text>
+  <rect x="206" y="362" width="110" height="22" rx="4" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="216" y="377" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#555">10000</text>
+
+  <!-- Bookmarks toggle -->
+  <rect x="82" y="396" width="28" height="16" rx="8" fill="#1a4a2a" stroke="#00c853" stroke-width="1"/>
+  <circle cx="90" cy="404" r="6" fill="#00c853"/>
+  <text x="116" y="408" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#888">Bookmarks Only</text>
+  <rect x="240" y="396" width="38" height="16" rx="4" fill="#1e1e1e" stroke="#333" stroke-width="1"/>
+  <text x="259" y="408" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#777" text-anchor="middle">Reset</text>
+
+  <!-- Filter button -->
+  <rect x="82" y="422" width="236" height="30" rx="6" fill="url(#btnGrad)"/>
+  <text x="200" y="442" font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="600" fill="#000" text-anchor="middle">Filter</text>
+
+  <!-- ── Right issues panel ── -->
+  <rect x="330" y="82" width="410" height="388" fill="#0d0d0d"/>
+
+  <!-- Vertical green accent bar -->
+  <rect x="738" y="82" width="3" height="388" fill="#00c853"/>
+
+  <!-- Issue 1 -->
+  <rect x="330" y="82" width="408" height="88" fill="#111" rx="0"/>
+  <line x1="330" y1="170" x2="738" y2="170" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="348" y="105" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="white">[ENH] window based time series segmentation via clustering</text>
+  <text x="348" y="122" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#666">👤 sktime   Repo: sktime/sktime</text>
+  <!-- Stars badge -->
+  <text x="348" y="140" font-family="Arial" font-size="10" fill="#FFD700">★</text>
+  <text x="362" y="140" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#888">7759</text>
+  <!-- Lang badge -->
+  <rect x="392" y="130" width="46" height="14" rx="3" fill="#1e2a1e" stroke="#00c853" stroke-width="0.5"/>
+  <text x="415" y="141" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#00e676" text-anchor="middle">Python</text>
+  <text x="444" y="140" font-family="Arial" font-size="9" fill="#555">📅 SEP 21, 2024</text>
+  <!-- Tags -->
+  <rect x="348" y="148" width="68" height="14" rx="3" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="382" y="159" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#888" text-anchor="middle">feature request</text>
+  <rect x="422" y="148" width="68" height="14" rx="3" fill="#1e1e1e" stroke="#00c853" stroke-width="0.5"/>
+  <text x="456" y="159" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#00e676" text-anchor="middle">good first issue</text>
+  <!-- Bookmark star -->
+  <text x="718" y="120" font-family="Arial" font-size="16" fill="#333">☆</text>
+
+  <!-- Issue 2 -->
+  <rect x="330" y="170" width="408" height="80" fill="#0d0d0d"/>
+  <line x1="330" y1="250" x2="738" y2="250" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="348" y="193" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="white">Voyage AI: Implement Scoring Model</text>
+  <text x="348" y="210" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#666">👤 langchain4j   Repo: langchain4j/langchain4j</text>
+  <text x="348" y="228" font-family="Arial" font-size="10" fill="#FFD700">★</text>
+  <text x="362" y="228" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#888">4501</text>
+  <rect x="392" y="218" width="36" height="14" rx="3" fill="#1a1a2e" stroke="#4488ff" stroke-width="0.5"/>
+  <text x="410" y="229" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#4488ff" text-anchor="middle">Java</text>
+  <text x="434" y="228" font-family="Arial" font-size="9" fill="#555">📅 SEP 21, 2024</text>
+  <rect x="348" y="234" width="68" height="14" rx="3" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="382" y="245" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#888" text-anchor="middle">enhancement</text>
+  <rect x="422" y="234" width="68" height="14" rx="3" fill="#1e1e1e" stroke="#00c853" stroke-width="0.5"/>
+  <text x="456" y="245" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#00e676" text-anchor="middle">good first issue</text>
+  <text x="718" y="210" font-family="Arial" font-size="16" fill="#333">☆</text>
+
+  <!-- Issue 3 -->
+  <rect x="330" y="250" width="408" height="80" fill="#111"/>
+  <line x1="330" y1="330" x2="738" y2="330" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="348" y="273" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="white">Voyage AI: Implement Embedding Model</text>
+  <text x="348" y="290" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#666">👤 langchain4j   Repo: langchain4j/langchain4j</text>
+  <text x="348" y="308" font-family="Arial" font-size="10" fill="#FFD700">★</text>
+  <text x="362" y="308" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#888">4501</text>
+  <rect x="392" y="298" width="36" height="14" rx="3" fill="#1a1a2e" stroke="#4488ff" stroke-width="0.5"/>
+  <text x="410" y="309" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#4488ff" text-anchor="middle">Java</text>
+  <text x="434" y="308" font-family="Arial" font-size="9" fill="#555">📅 SEP 21, 2024</text>
+  <rect x="348" y="314" width="68" height="14" rx="3" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="382" y="325" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#888" text-anchor="middle">enhancement</text>
+  <rect x="422" y="314" width="68" height="14" rx="3" fill="#1e1e1e" stroke="#00c853" stroke-width="0.5"/>
+  <text x="456" y="325" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#00e676" text-anchor="middle">good first issue</text>
+  <text x="718" y="290" font-family="Arial" font-size="16" fill="#333">☆</text>
+
+  <!-- Issue 4 (partial) -->
+  <rect x="330" y="330" width="408" height="90" fill="#0d0d0d"/>
+  <text x="348" y="353" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="white">[FEAT] Add Description / Animation to explain to user</text>
+  <text x="348" y="369" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="white">about the usage of each function</text>
+  <text x="348" y="386" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#666">👤 szeyu   Repo: szeyu/aischeduler</text>
+  <text x="348" y="403" font-family="Arial" font-size="10" fill="#FFD700">★</text>
+  <text x="362" y="403" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#888">0</text>
+  <rect x="392" y="393" width="62" height="14" rx="3" fill="#1e1a2e" stroke="#aa44ff" stroke-width="0.5"/>
+  <text x="423" y="404" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#aa44ff" text-anchor="middle">TypeScript</text>
+  <text x="460" y="403" font-family="Arial" font-size="9" fill="#555">📅 SEP 21, 2024</text>
+  <rect x="348" y="408" width="68" height="14" rx="3" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="382" y="419" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#888" text-anchor="middle">enhancement</text>
+  <rect x="422" y="408" width="68" height="14" rx="3" fill="#1e1e1e" stroke="#00c853" stroke-width="0.5"/>
+  <text x="456" y="419" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#00e676" text-anchor="middle">good first issue</text>
+  <text x="718" y="370" font-family="Arial" font-size="16" fill="#333">☆</text>
+
+  <!-- Fade-out gradient at bottom of issues -->
+  <defs>
+    <linearGradient id="fadeBottom" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d0d;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#0d0d0d;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect x="330" y="400" width="408" height="70" fill="url(#fadeBottom)"/>
+
+  <!-- Sidebar bottom fade -->
+  <defs>
+    <linearGradient id="fadeSidebar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#111;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#111;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect x="60" y="420" width="270" height="42" fill="url(#fadeSidebar)"/>
+</svg>

@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="outerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d1a"/>
+      <stop offset="100%" style="stop-color:#1a0d2e"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#13131f"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="genBtn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+    <linearGradient id="outputBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1030"/>
+      <stop offset="100%" style="stop-color:#130d20"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="12" stdDeviation="24" flood-color="rgba(124,58,237,0.3)"/>
+    </filter>
+    <filter id="purpleGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="rgba(168,85,247,0.6)"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#outerBg)"/>
+
+  <!-- Subtle bg orbs -->
+  <circle cx="150" cy="120" r="120" fill="#7c3aed" opacity="0.06"/>
+  <circle cx="680" cy="380" r="140" fill="#ec4899" opacity="0.06"/>
+  <circle cx="500" cy="80" r="80" fill="#a855f7" opacity="0.04"/>
+
+  <!-- App card -->
+  <rect x="50" y="28" width="700" height="444" rx="18" fill="url(#cardBg)" filter="url(#softShadow)"/>
+  <rect x="50" y="28" width="700" height="444" rx="18" fill="none" stroke="rgba(168,85,247,0.2)" stroke-width="1"/>
+
+  <!-- ── Header ── -->
+  <text x="400" y="72" font-family="Georgia,serif" font-size="22" font-weight="700" fill="white" text-anchor="middle" filter="url(#purpleGlow)">✨ <tspan fill="url(#titleGrad)">Mnemonic Maker Pro</tspan> ✨</text>
+  <text x="400" y="92" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#888" text-anchor="middle">AI-Powered Memory Enhancement</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="104" x2="720" y2="104" stroke="rgba(168,85,247,0.15)" stroke-width="1"/>
+
+  <!-- ── Mnemonic Type selector ── -->
+  <text x="80" y="126" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="600" fill="#aaa">Choose Your Mnemonic Type</text>
+
+  <!-- Type pills -->
+  <!-- Acrostic (selected) -->
+  <rect x="80" y="134" width="138" height="36" rx="8" fill="#7c3aed" filter="url(#purpleGlow)"/>
+  <rect x="80" y="134" width="138" height="36" rx="8" fill="none" stroke="rgba(168,85,247,0.8)" stroke-width="1"/>
+  <text x="100" y="156" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="white">🧠  Acrostic</text>
+  <text x="100" y="169" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.6)">First-letter trick</text>
+
+  <!-- Story -->
+  <rect x="228" y="134" width="138" height="36" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(168,85,247,0.25)" stroke-width="1"/>
+  <text x="248" y="156" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#bbb">✨  Story</text>
+  <text x="248" y="169" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#555">Narrative method</text>
+
+  <!-- Rhyme -->
+  <rect x="376" y="134" width="138" height="36" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(168,85,247,0.25)" stroke-width="1"/>
+  <text x="396" y="156" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#bbb">⚡  Rhyme</text>
+  <text x="396" y="169" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#555">Catchy phrases</text>
+
+  <!-- Chunking -->
+  <rect x="524" y="134" width="138" height="36" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(168,85,247,0.25)" stroke-width="1"/>
+  <text x="544" y="156" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#bbb">⚙️  Chunking</text>
+  <text x="544" y="169" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#555">Break it down</text>
+
+  <!-- ── Input area ── -->
+  <text x="80" y="196" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="600" fill="#aaa">What do you want to remember?</text>
+
+  <rect x="80" y="204" width="582" height="68" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(168,85,247,0.3)" stroke-width="1"/>
+  <!-- Placeholder text -->
+  <text x="96" y="225" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#555">E.g. HOMES (Great Lakes: Huron, Ontario, Michigan, Erie, Superior)</text>
+  <!-- Typed content preview -->
+  <text x="96" y="245" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#ddd">PEMDAS — Please Excuse My Dear Aunt Sally</text>
+  <text x="96" y="263" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#555">Order of operations: Parentheses, Exponents, Multiply, Divide, Add, Subtract</text>
+  <!-- Cursor -->
+  <rect x="472" y="244" width="2" height="14" rx="1" fill="#a855f7" opacity="0.9"/>
+
+  <!-- ── Generate button ── -->
+  <rect x="672" y="204" width="48" height="68" rx="8" fill="url(#genBtn)" filter="url(#purpleGlow)"/>
+  <text x="696" y="234" font-family="'Segoe UI',Arial,sans-serif" font-size="9" font-weight="600" fill="white" text-anchor="middle">Gene-</text>
+  <text x="696" y="247" font-family="'Segoe UI',Arial,sans-serif" font-size="9" font-weight="600" fill="white" text-anchor="middle">rate</text>
+  <text x="696" y="264" font-family="Arial" font-size="16" fill="white" text-anchor="middle">→</text>
+
+  <!-- ── Output section ── -->
+  <rect x="80" y="288" width="640" height="164" rx="10" fill="url(#outputBg)" stroke="rgba(168,85,247,0.25)" stroke-width="1"/>
+
+  <!-- Output header -->
+  <rect x="80" y="288" width="640" height="32" rx="10" fill="rgba(124,58,237,0.15)"/>
+  <rect x="80" y="306" width="640" height="14" fill="rgba(124,58,237,0.15)"/>
+  <text x="96" y="309" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="600" fill="#a855f7">✦ Generated Mnemonic</text>
+  <!-- Model badge -->
+  <rect x="574" y="294" width="132" height="20" rx="10" fill="rgba(124,58,237,0.3)" stroke="rgba(168,85,247,0.4)" stroke-width="1"/>
+  <text x="640" y="308" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#c084fc" text-anchor="middle">⚡ Claude 3.5 Sonnet</text>
+
+  <!-- Output content -->
+  <text x="96" y="342" font-family="Georgia,serif" font-size="13" font-weight="600" fill="#e2d9f3">Please Excuse My Dear Aunt Sally</text>
+  <text x="96" y="362" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#888">Breaking it down:</text>
+
+  <!-- Breakdown list -->
+  <text x="96" y="381" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#b39ddb">P</text>
+  <text x="108" y="381" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#777">→ Parentheses · </text>
+  <text x="196" y="381" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#b39ddb">E</text>
+  <text x="208" y="381" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#777">→ Exponents · </text>
+  <text x="288" y="381" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#b39ddb">M</text>
+  <text x="300" y="381" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#777">→ Multiplication</text>
+
+  <text x="96" y="397" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#b39ddb">D</text>
+  <text x="108" y="397" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#777">→ Division · </text>
+  <text x="180" y="397" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#b39ddb">A</text>
+  <text x="192" y="397" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#777">→ Addition · </text>
+  <text x="260" y="397" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#b39ddb">S</text>
+  <text x="272" y="397" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#777">→ Subtraction</text>
+
+  <!-- Copy button -->
+  <rect x="570" y="426" width="132" height="20" rx="6" fill="rgba(168,85,247,0.15)" stroke="rgba(168,85,247,0.3)" stroke-width="1"/>
+  <text x="636" y="440" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#c084fc" text-anchor="middle">📋  Copy Mnemonic</text>
+
+  <!-- AI model fallback footer -->
+  <text x="400" y="466" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#444" text-anchor="middle">Powered by Claude · GPT-4 · Gemini · Llama · Mistral — automatic model fallback</text>
+
+</svg>
